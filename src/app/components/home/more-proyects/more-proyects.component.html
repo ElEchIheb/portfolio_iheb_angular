@@ -1,0 +1,52 @@
+<section class="section more-proyects">
+  <div class="container">
+    <div class="section-box">
+      <div>
+        <h3 class="section-title">
+          <span class="n-section-title">04.</span> {{"OtherProjects.Title" | translate}}
+        </h3>
+      </div>
+      <div class="mt-5">
+        <div class="row p-0">
+          <div *ngFor="let project of 'OtherProjects.Projects' | translate; let i = index"
+               class="col-12 col-md-6 col-lg-4 proyect-col"
+               data-aos="fade-up"
+               data-aos-duration="1000">
+            <div class="more-proyect-box">
+              <div class="row w-100 text-left m-0 p-0">
+                <div class="col-12 p-0 mb-2">
+                  <strong class="project-category">{{ project.Category }}</strong>
+                </div>
+                <div class="col-12 p-0 d-flex justify-content-between align-items-center mb-2">
+                  <h5 class="other-proyect-title m-0">{{ project.Title }}</h5>
+                  <div>
+                    <a *ngIf="project.demoLink"
+                       (click)="$event.stopPropagation()"
+                       [href]="project.demoLink" target="_blank"
+                       title="Demo Link">
+                      <i class="fas fa-external-link-alt"></i>
+                    </a>
+                    <a *ngIf="project.ghLink"
+                       (click)="$event.stopPropagation()"
+                       [href]="project.ghLink" target="_blank"
+                       title="GitHub Link" class="ml-3">
+                      <i class="fab fa-github"></i>
+                    </a>
+                  </div>
+                </div>
+                <p class="other-proyect-description">{{ project.Description }}</p>
+              </div>
+              <div>
+                <ul class="more-proyects-skills">
+                  <li *ngFor="let technology of project.Technologies">
+                    <span class="underline">{{ technology }}</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

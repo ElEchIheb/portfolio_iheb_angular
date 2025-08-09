@@ -1,0 +1,175 @@
+{
+  "Header.Item1": "About Me",
+  "Header.Item2": "Experience",
+  "Header.Item3": "Projects",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Resume",
+  "Header.cvName": "iheb el_ech-cv.pdf",
+  "Loading": "Loading...",
+
+  "Banner.Pretitle": "Hello! My name is",
+  "Banner.Description": "I earned my bachelor's degree in <span class='underline'>computer science</span>, specializing in <span class='underline'>software engineering</span> and information systems. Currently, I am pursuing a professional master's degree in <span class='underline'>intelligent web applications</span>. Rigorous and capable of synthesizing information easily, I am also motivated and proactive, always ready to fully commit to projects.",
+  "Banner.ActionBtn": "Say Hi",
+
+  "AboutMe.Title": "About Me",
+  "AboutMe.Paragraphs": [
+    "I have obtained a bachelor's degree in <span class='underline'>computer science</span>, specializing in <span class='underline'>software engineering</span> and information systems. Rigorous and able to synthesize information easily, I am also motivated and proactive, always ready to fully commit to projects. I am currently a student in the professional master's program in <span class='underline'>'Intelligent Web Applications'</span>.",
+    "Name: EL ECH IHEB",
+    "Date of birth: October 07, 2002",
+    "Address: Morneg, Ben Arous",
+    "Zip code: 2090",
+    "Email: <span class='underline'>ihebelleuch6@gmail.com</span>",
+    "Phone: <span class='underline'>+216 95 198 885</span>"
+  ],
+
+  "Experience.Title": "Experience",
+  "Experience.Jobs": [
+    {
+      "Tab": "PFA",
+      "Title": "Summer Internship",
+      "Date": "08/01/2023 - 08/31/2023",
+      "Description": [
+        "I completed a summer internship at Smart Technology as a fullstack web developer.",
+        "During this internship, I had the opportunity to work on real projects, contributing to the development and maintenance of web applications.",
+        "I was involved in all phases of the development process, from design to production deployment.",
+        "I was able to apply my front-end and back-end development skills using the Symfony Framework."
+      ]
+    },
+    {
+      "Tab": "PFE",
+      "Title": "Final Year Project Internship",
+      "Date": "02/01/2024 - 04/30/2024",
+      "Description": [
+        "As part of my final year project at DXC Technology Tunisia, I designed and developed a web and mobile platform for user management.",
+        "This project allowed me to apply the skills acquired during my previous internship, using Angular and Express.js for web development, and Ionic and Express.js for the mobile part.",
+        "I also integrated features such as an interactive chatbot for a better user experience, as well as Gmail SMTP for sending emails to users."
+      ]
+    }
+  ],
+
+
+  "FeatureProjects.Title": "My Projects",
+  "FeatureProjects.Label": "Highlighted Project",
+  "FeatureProjects.Projects": [
+
+      {
+        "Title": "Final Year Project (DXC Mobile APP)",
+        "Description": "Final year project at DXC Technology Tunisia. Development of a web and mobile platform aimed at DXC users to manage users based on departments, roles, and teams. Features include online care report writing and the ability to submit requests to an administrator. Integration of an interactive chatbot for personalized assistance and enhanced user experience. Use of Gmail SMTP for sending emails to users to provide important notifications and updates. Containerized with Docker.",
+        "Technologies": ["Angular", "Express.js", "Ionic", "Docker", "Gmail SMTP"],
+        "imgs": [
+          "assets/images/agrourbana/agrourbana1.png",
+          "assets/images/agrourbana/agrourbana2.png",
+          "assets/images/agrourbana/agrourbana3.png",
+          "assets/images/agrourbana/agrourbana4.jpg",
+          "assets/images/agrourbana/agrourbana5.jpg"
+        ]
+      },
+      {
+        "Title": "PFA Project (Recruitment Process Mgmt)",
+        "Description": "I completed a final year project focused on developing a recruitment process management application. My work involved designing and implementing a solution to automate the different stages of recruitment. Through this experience, I gained skills in software engineering and the use of information technologies to optimize recruitment processes. Utilized the Symfony framework. Designed a complete platform.",
+        "Technologies": ["Symfony"],
+        "imgs": [
+          "assets/images/pfa/1.png",
+          "assets/images/pfa/2.png",
+          "assets/images/pfa/3.png",
+          "assets/images/pfa/4.png",
+          "assets/images/pfa/5.png",
+          "assets/images/pfa/6.png"
+        ]
+      },
+      {
+        "Title": " Portfolio",
+        "Description": " portfolio containing all my necessary data.",
+        "Technologies": [],
+        "imgs": [
+          "assets/images/pf1/1.png",
+          "assets/images/pf1/2.png",
+          "assets/images/pf1/3.png",
+          "assets/images/pf1/4.png"
+        ]
+      }
+
+
+
+  ],
+
+
+
+
+
+
+    "OtherProjects.Title": "Skills",
+    "OtherProjects.Projects": [
+      {
+        "Category": "Frontend Development",
+        "Title": "",
+        "Description": "TypeScript-based frontend framework to build dynamic web applications.\nAngular\nHTML\nCSS\nJavaScript\nIonic\nFlutter\nSymfony (Twig)",
+        "imgs": [],
+        "ghLink": "",
+        "demoLink": "",
+        "Technologies": []
+      },
+      {
+        "Category": "Backend Development",
+        "Title": "",
+        "Description": "Technologies for server-side development and data management.\nPHP\nLaravel\nSymfony\nExpressJS\nNodeJS",
+        "imgs": [],
+        "ghLink": "",
+        "demoLink": "",
+        "Technologies": []
+      },
+      {
+        "Category": "Databases",
+        "Title": "",
+        "Description": "Management of relational and NoSQL databases.\nPL/SQL\nFirebase",
+        "imgs": [],
+        "ghLink": "",
+        "demoLink": "",
+        "Technologies": []
+      },
+      {
+        "Category": "Programming Languages",
+        "Title": "",
+        "Description": "Various languages used for software development and data science.\nC / C++\nJava\nR\nPython\nPython for Data Science",
+        "imgs": [],
+        "ghLink": "",
+        "demoLink": "",
+        "Technologies": []
+      },
+      {
+        "Category": "Artificial Intelligence & NLP",
+        "Title": "",
+        "Description": "Design and development of AI models and natural language processing.\nNLP model design (Web 4.0)\nDevelopment of data analysis models\nMastery of algorithms: Perceptron, K-Fold, etc.",
+        "imgs": [],
+        "ghLink": "",
+        "demoLink": "",
+        "Technologies": []
+      },
+      {
+        "Category": "Hosting & DevOps",
+        "Title": "",
+        "Description": "Skills in deployment, orchestration, and hosting of applications.\nWebsite Hosting\nDocker\nKubernetes",
+        "imgs": [],
+        "ghLink": "",
+        "demoLink": "",
+        "Technologies": []
+      },
+      {
+        "Category": "Tools & Environments",
+        "Title": "",
+        "Description": "Mastered development tools and environments.\nGIT\nVSCode / IntelliJ / Eclipse\nPS3 / Canva",
+        "imgs": [],
+        "ghLink": "",
+        "demoLink": "",
+        "Technologies": []
+      }
+
+
+
+  ],
+
+  "Contact.Pretitle": "And... Now?",
+  "Contact.Title": "Say Hi!",
+  "Contact.Content": "I will be glad to hear from you if you want to discuss new opportunities. Write to me, and I will respond as soon as I see your message.",
+  "Contact.Btn": "Contact Me"
+}

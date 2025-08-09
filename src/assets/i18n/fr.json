@@ -1,0 +1,150 @@
+{
+  "Header.Item1": "À propos de moi",
+  "Header.Item2": "Expérience",
+  "Header.Item3": "Projets",
+  "Header.Item4": "Contact",
+  "Header.cvBtn": "Curriculum",
+  "Header.cvName": "iheb el_ech-cv.pdf",
+  "Loading": "Chargement...",
+
+  "Banner.Pretitle": "Bonjour ! Je m'appelle",
+  "Banner.Description": "J'ai obtenu ma licence en <span class='underline'>sciences informatiques</span>, spécialisé en <span class='underline'>génie logiciel</span> et systèmes d'information. Actuellement, je poursuis un mastère professionnel en <span class='underline'>applications web intelligentes</span>. Rigoureux et capable de synthétiser l'information facilement, je suis également motivé et proactif, toujours prêt à m'engager pleinement dans les projets.",
+  "Banner.ActionBtn": "Dis bonjour",
+
+  "AboutMe.Title": "À propos de moi",
+  "AboutMe.Paragraphs": [
+    "J'ai obtenu une licence en <span class='underline'>sciences informatiques</span>, spécialisé en <span class='underline'>génie logiciel</span> et systèmes d'information. Rigoureux et capable de synthétiser l'information facilement, je suis également motivé et proactif, toujours prêt à m'engager pleinement dans les projets. Je suis actuellement étudiant en mastère professionnel en <span class='underline'>applications web intelligentes</span>.",
+    "Nom : EL ECH IHEB",
+    "Date de naissance : 07 octobre 2002",
+    "Adresse : Morneg, Ben Arous",
+    "Code postal : 2090",
+    "Email : <span class='underline'>ihebelleuch6@gmail.com</span>",
+    "Téléphone : <span class='underline'>+216 95 198 885</span>"
+
+  ],
+
+  "Experience.Title": "Expérience",
+  "Experience.Jobs": [
+    {
+      "Tab": "PFA",
+      "Title": "Stage de PFA",
+      "Date": "01/08/2023 - 31/08/2023",
+      "Description": [
+        "J'ai effectué un stage d'été chez Smart Technology en tant que développeur web fullstack.",
+        "Au cours de ce stage, j'ai eu l'opportunité de travailler sur des projets concrets, en contribuant au développement et à la maintenance d'applications web.",
+        "J'ai été impliqué dans toutes les phases du processus de développement, de la conception à la mise en production.",
+        "J'ai pu mettre en pratique mes compétences en développement front-end et back-end, en utilisant le Framework ‘Symfony’."
+      ]
+    },
+    {
+      "Tab": "PFE",
+      "Title": "Stage de PFE",
+      "Date": "01/02/2024 - 30/04/2024",
+      "Description": [
+        "Dans le cadre de mon projet de fin d'études chez DXC Technology Tunisie, j'ai conçu et développé une plateforme web et mobile pour la gestion des utilisateurs.",
+        "Ce projet m'a permis de mettre en pratique mes compétences acquises lors de mon stage précédent, en utilisant Angular et Express.js pour le développement web, ainsi que Ionic et Express.js pour la partie mobile.",
+        "J'ai également intégré des fonctionnalités telles qu'un chatbot interactif pour une meilleure expérience utilisateur, ainsi que l'utilisation de Gmail SMTP pour l'envoi d'e-mails vers les utilisateurs."
+      ]
+    }
+  ],
+
+  "FeatureProjects.Title": "Mes projets",
+  "FeatureProjects.Label": "Projet phare",
+  "FeatureProjects.Projects": [
+
+    {
+      "Title": "Projet PFE (DXC Mobile APP)",
+      "Description": "Projet de fin d'études au sein de DXC Technology Tunisie. Développement d'une plateforme web et mobile destinée aux utilisateurs de DXC pour la gestion des utilisateurs en fonction des départements, postes et équipes. Fonctionnalités incluant la rédaction de bulletins de soins en ligne et la possibilité de soumettre des demandes à un administrateur. Intégration d'un chatbot interactif pour une assistance personnalisée et une meilleure expérience utilisateur. Utilisation de Gmail SMTP pour l'envoi d'e-mails vers les utilisateurs afin de fournir des notifications et des mises à jour importantes. Conteneurisé en Docker.",
+      "Technologies": ["Angular", "Express.js", "Ionic", "Docker", "Gmail SMTP"],
+      "imgs": [
+        "assets/images/agrourbana/agrourbana1.png",
+        "assets/images/agrourbana/agrourbana2.png",
+        "assets/images/agrourbana/agrourbana3.png",
+        "assets/images/agrourbana/agrourbana4.jpg",
+        "assets/images/agrourbana/agrourbana5.jpg"
+      ]
+    },
+
+    {
+      "Title": "Projet PFA (La gestion du processus de recrutement)",
+      "Description": "J'ai réalisé un projet de fin d'année consistant à développer une application de gestion du processus de recrutement. Mon travail a consisté à concevoir et mettre en œuvre une solution permettant d'automatiser les différentes étapes du recrutement. Grâce à cette expérience, j'ai acquis des compétences en génie logiciel et en utilisation des technologies de l'information pour optimiser les processus de recrutement. Utilisation du framework Symfony. Conception d'une plateforme complète.",
+      "Technologies": ["Symfony"],
+      "imgs": [
+        "assets/images/pfa/1.png",
+        "assets/images/pfa/2.png",
+        "assets/images/pfa/3.png",
+        "assets/images/pfa/4.png",
+        "assets/images/pfa/5.png",
+        "assets/images/pfa/6.png"
+      ]
+    },
+    {
+      "Title": "Portfolio ",
+      "Description": "Portfolio qui contient toutes mes données nécessaires.",
+      "Technologies": [],
+      "imgs": [
+        "assets/images/pf1/1.png",
+        "assets/images/pf1/2.png",
+        "assets/images/pf1/3.png",
+        "assets/images/pf1/4.png"
+      ]
+    }
+
+
+
+
+  ],
+
+  "OtherProjects.Title": "Autres projets",
+  "OtherProjects.Projects": [
+    {
+      "Title": "Jeu des mains",
+      "Description": "Jeu étendu pierre-papier-ciseaux. Projet perso Angular avec services, interfaces et composants.",
+      "imgs": ["assets/images/hands-game.png"],
+      "ghLink": "https://github.com/andresjosehr/hands-game",
+      "demoLink": "https://proyectos.andresjosehr.com/hands-game",
+      "Technologies": ["Angular", "CSS GRID", "SASS", "Animations Angular"]
+    },
+    {
+      "Title": "Visualiseur de pays",
+      "Description": "Interface consommant une API de pays pour liste, détails, filtre par nom et région. Avec mode sombre.",
+      "imgs": ["assets/images/countries-viewer.png"],
+      "ghLink": "https://github.com/andresjosehr/countries-viewer",
+      "demoLink": "https://proyectos.andresjosehr.com/countries-viewer",
+      "Technologies": ["Angular", "RxJS", "SASS", "API"]
+    },
+    {
+      "Title": "Section 4 cartes",
+      "Description": "Page minimaliste énumérant 4 caractéristiques en 4 cartes avec animations d'entrée Angular.",
+      "ghLink": "https://github.com/andresjosehr/fourd-card-feature-section",
+      "demoLink": "https://proyectos.andresjosehr.com/four-card-feature-section",
+      "Technologies": ["Angular", "SASS", "CSS GRID"]
+    },
+    {
+      "Title": "Section preuve sociale",
+      "Description": "Projet perso d'une page designée d'après Figma, développée en Angular, SASS et CSS GRID.",
+      "ghLink": "https://github.com/andresjosehr/social-proof-section",
+      "demoLink": "https://proyectos.andresjosehr.com/social-proof-section",
+      "Technologies": ["Angular", "CSS GRID", "GIT"]
+    },
+    {
+      "Title": "FAQ accordéon",
+      "Description": "Accordéon de FAQ avec logique et animations Angular.",
+      "ghLink": "https://github.com/andresjosehr/faq-accordion",
+      "demoLink": "https://proyectos.andresjosehr.com/faq-accordion",
+      "Technologies": ["Angular", "CSS GRID", "Animations Angular"]
+    },
+    {
+      "Title": "Carte de profil",
+      "Description": "Design simple d'une page avec carte profil contenant info basiques.",
+      "ghLink": "https://github.com/andresjosehr/profile-card-component",
+      "demoLink": "https://proyectos.andresjosehr.com/profile-card-component",
+      "Technologies": ["Angular", "SASS", "GIT"]
+    }
+  ],
+
+  "Contact.Pretitle": "Et maintenant ?",
+  "Contact.Title": "Contactez-moi !",
+  "Contact.Content": "Je serai ravi de recevoir votre message si vous souhaitez discuter de nouvelles opportunités. Écrivez-moi, je répondrai dès que possible.",
+  "Contact.Btn": "Contactez-moi"
+}

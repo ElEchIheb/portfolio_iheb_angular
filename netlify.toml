@@ -1,7 +1,7 @@
 [build]
   publish = "dist/andresjosehr-portfolio"
-  command = "npm run build -- --configuration production"
-
+  command = "npm run build"
+  
 [[redirects]]
   from = "/*"
   to = "/index.html"

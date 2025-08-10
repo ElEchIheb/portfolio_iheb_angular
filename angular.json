@@ -19,9 +19,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": {
-                          "base": "dist/andresjosehr-portfolio"
-                        },
+                            "outputPath": "dist/andresjosehr-portfolio",
                         "index": "src/index.html",
                         "polyfills": [
                           "src/polyfills.ts"
@@ -51,6 +49,7 @@
                     },
                     "configurations": {
                         "production": {
+                            "baseHref": "/",
                             "fileReplacements": [
                                 {
                                     "replace": "src/environments/environment.ts",
@@ -106,7 +105,8 @@
                         "assets": [
                             "src/favicon.ico",
                             "src/assets",
-                            "src/manifest.webmanifest"
+                            "src/manifest.webmanifest",
+                            "src/_redirects"
                         ],
                         "styles": [
                             "src/styles.css"

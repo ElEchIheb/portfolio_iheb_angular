@@ -1,4 +1,4 @@
-<section class="section more-proyects">
+<section id="skills" class="section more-proyects">
   <div class="container">
     <div class="section-box">
       <div>
@@ -47,6 +47,44 @@
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</section>
+<section id="certifications" class="section certifications-gallery">
+  <div class="container">
+    <div class="section-box">
+      <h3 class="section-title">
+        <span class="n-section-title">05.</span> Certifications
+      </h3>
+      <div class="gallery mt-5 row">
+        <div class="col-6 col-sm-4 col-md-3 mb-4" *ngFor="let cert of certifications">
+          <img
+            [src]="'assets/certifs/' + cert + '.jpg'"
+            alt="Certification {{cert}}"
+            class="img-fluid rounded shadow-sm"
+            style="cursor: pointer;"
+            (click)="openCert(cert)" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="modal-backdrop"
+    *ngIf="selectedCert !== null"
+    (click)="closeCert()"
+    style="position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display:flex; justify-content:center; align-items:center;">
+    <div class="modal-content" (click)="$event.stopPropagation()" style="position: relative;">
+      <img
+        [src]="'assets/certifs/' + selectedCert + '.jpg'"
+        alt="Certification agrandie"
+        style="max-width: 90vw; max-height: 90vh; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.8);" />
+      <button
+        class="close-btn"
+        (click)="closeCert()"
+        style="position: absolute; top: 10px; right: 10px; font-size: 30px; background: transparent; border: none; color: white; cursor: pointer;">
+        ×
+      </button>
     </div>
   </div>
 </section>

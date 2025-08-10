@@ -1,7 +1,11 @@
 [build]
   publish = "dist/andresjosehr-portfolio/browser"
   command = "npm run build"
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 06a1acb (Mise à jour portfolio : ajout section certifications, traductions et corrections)
 [[redirects]]
   from = "/*"
   to = "/index.html"

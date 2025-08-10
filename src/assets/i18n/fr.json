@@ -23,30 +23,55 @@
 
   ],
 
-  "Experience.Title": "Expérience",
-  "Experience.Jobs": [
-    {
-      "Tab": "PFA",
-      "Title": "Stage de PFA",
-      "Date": "01/08/2023 - 31/08/2023",
-      "Description": [
-        "J'ai effectué un stage d'été chez Smart Technology en tant que développeur web fullstack.",
-        "Au cours de ce stage, j'ai eu l'opportunité de travailler sur des projets concrets, en contribuant au développement et à la maintenance d'applications web.",
-        "J'ai été impliqué dans toutes les phases du processus de développement, de la conception à la mise en production.",
-        "J'ai pu mettre en pratique mes compétences en développement front-end et back-end, en utilisant le Framework ‘Symfony’."
-      ]
-    },
-    {
-      "Tab": "PFE",
-      "Title": "Stage de PFE",
-      "Date": "01/02/2024 - 30/04/2024",
-      "Description": [
-        "Dans le cadre de mon projet de fin d'études chez DXC Technology Tunisie, j'ai conçu et développé une plateforme web et mobile pour la gestion des utilisateurs.",
-        "Ce projet m'a permis de mettre en pratique mes compétences acquises lors de mon stage précédent, en utilisant Angular et Express.js pour le développement web, ainsi que Ionic et Express.js pour la partie mobile.",
-        "J'ai également intégré des fonctionnalités telles qu'un chatbot interactif pour une meilleure expérience utilisateur, ainsi que l'utilisation de Gmail SMTP pour l'envoi d'e-mails vers les utilisateurs."
-      ]
-    }
-  ],
+  
+    "Experience.Title": "Expérience",
+    "Experience.Jobs": [
+      {
+        "Tab": "PFA",
+        "Title": "Stage de PFA",
+        "Date": "01/08/2023 - 31/08/2023",
+        "Description": [
+          "J'ai effectué un stage d'été chez Smart Technology en tant que développeur web fullstack.",
+          "Au cours de ce stage, j'ai eu l'opportunité de travailler sur des projets concrets, en contribuant au développement et à la maintenance d'applications web.",
+          "J'ai été impliqué dans toutes les phases du processus de développement, de la conception à la mise en production.",
+          "J'ai pu mettre en pratique mes compétences en développement front-end et back-end, en utilisant le Framework ‘Symfony’."
+        ]
+      },
+      {
+        "Tab": "PFE",
+        "Title": "Stage de PFE",
+        "Date": "01/02/2024 - 30/04/2024",
+        "Description": [
+          "Dans le cadre de mon projet de fin d'études chez DXC Technology Tunisie, j'ai conçu et développé une plateforme web et mobile pour la gestion des utilisateurs.",
+          "Ce projet m'a permis de mettre en pratique mes compétences acquises lors de mon stage précédent, en utilisant Angular et Express.js pour le développement web, ainsi que Ionic et Express.js pour la partie mobile.",
+          "J'ai également intégré des fonctionnalités telles qu'un chatbot interactif pour une meilleure expérience utilisateur, ainsi que l'utilisation de Gmail SMTP pour l'envoi d'e-mails vers les utilisateurs."
+        ]
+      },
+      {
+        "Tab": "mastere",
+        "Title": "Master Professionnel en Applications Web Intelligentes",
+        "Date": "2024 - Présent",
+        "Description": [
+          "En cours d'études au Higher Institute of Computer Science of Kef."
+        ]
+      },
+      {
+        "Tab": "licence",
+        "Title": "Licence en Informatique, spécialisation Génie Logiciel et Systèmes d'Information",
+        "Date": "2021 - 2024",
+        "Description": [
+          "Diplôme obtenu au Higher Institute of Computer Science of Kef."
+        ]
+      },
+      {
+        "Tab": "bac",
+        "Title": "Baccalauréat en Informatique",
+        "Date": "2020 - 2021",
+        "Description": [
+          "Obtenu au Lycée Aboulkacem Chebbi, Morneg."
+        ]
+      }
+    ],
 
   "FeatureProjects.Title": "Mes projets",
   "FeatureProjects.Label": "Projet phare",
@@ -94,52 +119,70 @@
 
 
   ],
-
-  "OtherProjects.Title": "Autres projets",
+  "OtherProjects.Title": "Compétences",
   "OtherProjects.Projects": [
     {
-      "Title": "Jeu des mains",
-      "Description": "Jeu étendu pierre-papier-ciseaux. Projet perso Angular avec services, interfaces et composants.",
-      "imgs": ["assets/images/hands-game.png"],
-      "ghLink": "https://github.com/andresjosehr/hands-game",
-      "demoLink": "https://proyectos.andresjosehr.com/hands-game",
-      "Technologies": ["Angular", "CSS GRID", "SASS", "Animations Angular"]
+      "Category": "Développement Frontend",
+      "Title": "",
+      "Description": "Framework frontend basé sur TypeScript pour construire des applications web dynamiques.\nAngular\nHTML\nCSS\nJavaScript\nIonic\nFlutter\nSymfony (Twig)",
+      "imgs": [],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": []
     },
     {
-      "Title": "Visualiseur de pays",
-      "Description": "Interface consommant une API de pays pour liste, détails, filtre par nom et région. Avec mode sombre.",
-      "imgs": ["assets/images/countries-viewer.png"],
-      "ghLink": "https://github.com/andresjosehr/countries-viewer",
-      "demoLink": "https://proyectos.andresjosehr.com/countries-viewer",
-      "Technologies": ["Angular", "RxJS", "SASS", "API"]
+      "Category": "Développement Backend",
+      "Title": "",
+      "Description": "Technologies pour le développement côté serveur et la gestion des données.\nPHP\nLaravel\nSymfony\nExpressJS\nNodeJS",
+      "imgs": [],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": []
     },
     {
-      "Title": "Section 4 cartes",
-      "Description": "Page minimaliste énumérant 4 caractéristiques en 4 cartes avec animations d'entrée Angular.",
-      "ghLink": "https://github.com/andresjosehr/fourd-card-feature-section",
-      "demoLink": "https://proyectos.andresjosehr.com/four-card-feature-section",
-      "Technologies": ["Angular", "SASS", "CSS GRID"]
+      "Category": "Bases de données",
+      "Title": "",
+      "Description": "Gestion des bases de données relationnelles et NoSQL.\nPL/SQL\nFirebase",
+      "imgs": [],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": []
     },
     {
-      "Title": "Section preuve sociale",
-      "Description": "Projet perso d'une page designée d'après Figma, développée en Angular, SASS et CSS GRID.",
-      "ghLink": "https://github.com/andresjosehr/social-proof-section",
-      "demoLink": "https://proyectos.andresjosehr.com/social-proof-section",
-      "Technologies": ["Angular", "CSS GRID", "GIT"]
+      "Category": "Langages de programmation",
+      "Title": "",
+      "Description": "Différents langages utilisés pour le développement logiciel et la science des données.\nC / C++\nJava\nR\nPython\nPython pour la Data Science",
+      "imgs": [],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": []
     },
     {
-      "Title": "FAQ accordéon",
-      "Description": "Accordéon de FAQ avec logique et animations Angular.",
-      "ghLink": "https://github.com/andresjosehr/faq-accordion",
-      "demoLink": "https://proyectos.andresjosehr.com/faq-accordion",
-      "Technologies": ["Angular", "CSS GRID", "Animations Angular"]
+      "Category": "Intelligence Artificielle & NLP",
+      "Title": "",
+      "Description": "Conception et développement de modèles d'IA et de traitement du langage naturel.\nConception de modèles NLP (Web 4.0)\nDéveloppement de modèles d’analyse de données\nMaîtrise d’algorithmes : Perceptron, K-Fold, etc.",
+      "imgs": [],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": []
     },
     {
-      "Title": "Carte de profil",
-      "Description": "Design simple d'une page avec carte profil contenant info basiques.",
-      "ghLink": "https://github.com/andresjosehr/profile-card-component",
-      "demoLink": "https://proyectos.andresjosehr.com/profile-card-component",
-      "Technologies": ["Angular", "SASS", "GIT"]
+      "Category": "Hébergement & DevOps",
+      "Title": "",
+      "Description": "Compétences en déploiement, orchestration et hébergement d’applications.\nHébergement de sites web\nDocker\nKubernetes",
+      "imgs": [],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": []
+    },
+    {
+      "Category": "Outils & Environnements",
+      "Title": "",
+      "Description": "Maîtrise des outils et environnements de développement.\nGIT\nVSCode / IntelliJ / Eclipse\nPS3 / Canva",
+      "imgs": [],
+      "ghLink": "",
+      "demoLink": "",
+      "Technologies": []
     }
   ],
 

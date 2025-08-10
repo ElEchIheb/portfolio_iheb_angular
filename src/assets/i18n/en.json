@@ -22,30 +22,55 @@
     "Phone: <span class='underline'>+216 95 198 885</span>"
   ],
 
-  "Experience.Title": "Experience",
-  "Experience.Jobs": [
-    {
-      "Tab": "PFA",
-      "Title": "Summer Internship",
-      "Date": "08/01/2023 - 08/31/2023",
-      "Description": [
-        "I completed a summer internship at Smart Technology as a fullstack web developer.",
-        "During this internship, I had the opportunity to work on real projects, contributing to the development and maintenance of web applications.",
-        "I was involved in all phases of the development process, from design to production deployment.",
-        "I was able to apply my front-end and back-end development skills using the Symfony Framework."
-      ]
-    },
-    {
-      "Tab": "PFE",
-      "Title": "Final Year Project Internship",
-      "Date": "02/01/2024 - 04/30/2024",
-      "Description": [
-        "As part of my final year project at DXC Technology Tunisia, I designed and developed a web and mobile platform for user management.",
-        "This project allowed me to apply the skills acquired during my previous internship, using Angular and Express.js for web development, and Ionic and Express.js for the mobile part.",
-        "I also integrated features such as an interactive chatbot for a better user experience, as well as Gmail SMTP for sending emails to users."
-      ]
-    }
-  ],
+    "Experience.Title": "Experience",
+    "Experience.Jobs": [
+      {
+        "Tab": "PFA",
+        "Title": "Summer Internship",
+        "Date": "08/01/2023 - 08/31/2023",
+        "Description": [
+          "I completed a summer internship at Smart Technology as a fullstack web developer.",
+          "During this internship, I had the opportunity to work on real projects, contributing to the development and maintenance of web applications.",
+          "I was involved in all phases of the development process, from design to production deployment.",
+          "I was able to apply my front-end and back-end development skills using the Symfony Framework."
+        ]
+      },
+      {
+        "Tab": "PFE",
+        "Title": "Final Year Project Internship",
+        "Date": "02/01/2024 - 04/30/2024",
+        "Description": [
+          "As part of my final year project at DXC Technology Tunisia, I designed and developed a web and mobile platform for user management.",
+          "This project allowed me to apply the skills acquired during my previous internship, using Angular and Express.js for web development, and Ionic and Express.js for the mobile part.",
+          "I also integrated features such as an interactive chatbot for a better user experience, as well as Gmail SMTP for sending emails to users."
+        ]
+      },
+      {
+        "Tab": "bac",
+        "Title": "Baccalaureate in Computer Science",
+        "Date": "2020 - 2021",
+        "Description": [
+          "Obtained at Lycée Aboulkacem Chebbi, Morneg."
+        ]
+      },
+      {
+        "Tab": "licence",
+        "Title": "Bachelor's Degree in Computer Science, specializing in Software Engineering and Information Systems",
+        "Date": "2021 - 2024",
+        "Description": [
+          "Degree obtained from the Higher Institute of Computer Science of Kef."
+        ]
+      },
+      {
+        "Tab": "mastere",
+        "Title": "Professional Master's in Intelligent Web Applications",
+        "Date": "2024 - Present",
+        "Description": [
+          "Currently studying at the Higher Institute of Computer Science of Kef."
+        ]
+      }
+    ],
+
 
 
   "FeatureProjects.Title": "My Projects",

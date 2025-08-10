@@ -16,10 +16,22 @@
               <a ngbNavLink (click)='scroll("proyects")'><span class='nav-number'>03. </span> <span class="underline nav-text"> {{"Header.Item3" | translate}}</span></a>
               <ng-template ngbNavContent>Second content</ng-template>
           </li>
+          <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_skills", "menu", "click")'>
+            <a ngbNavLink (click)='scroll("skills")'>
+              <span class='nav-number'>04. </span> <span class="underline nav-text"> {{"OtherProjects.Title" | translate}}</span>
+            </a>
+          </li>
+          <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_certifications", "menu", "click")'>
+            <a ngbNavLink (click)='scroll("certifications")'>
+              <span class='nav-number'>05. </span> <span class="underline nav-text">Certifs</span>
+            </a>
+          </li>
+
           <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>
-              <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>04. </span> <span class="underline nav-text"> {{"Header.Item4" | translate}}</span></a>
+              <a ngbNavLink (click)='scroll("contact")'><span class='nav-number'>06. </span> <span class="underline nav-text"> {{"Header.Item4" | translate}}</span></a>
               <ng-template ngbNavContent>Second content</ng-template>
           </li>
+
           <li ngbNavItem>
               <app-dynamic-button
                 [text]="'Header.cvBtn' | translate"
@@ -35,10 +47,10 @@
               <div ngbDropdown class="d-inline-block">
                   <div class="language-container" id="dropdownForm1" ngbDropdownToggle>
                       <img *ngIf='languageFormControl.value == "en"' width="20px" src="https://www.worldometers.info/img/flags/us-flag.gif" alt="English">
-                      <span *ngIf='languageFormControl.value == "en"' class="flag-text">English</span>
+                      <span *ngIf='languageFormControl.value == "en"' class="flag-text">Eng</span>
 
                       <img *ngIf='languageFormControl.value == "fr"' width="20px" src="https://www.worldometers.info/img/flags/fr-flag.gif" alt="Français">
-                      <span *ngIf='languageFormControl.value == "fr"' class="flag-text">Français</span>
+                      <span *ngIf='languageFormControl.value == "fr"' class="flag-text">Fr</span>
                       <svg class='arrow-language' xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"/></svg>
                   </div>
                   <div ngbDropdownMenu aria-labelledby="dropdownForm1">

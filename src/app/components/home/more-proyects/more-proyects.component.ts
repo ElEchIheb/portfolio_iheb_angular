@@ -10,7 +10,7 @@ import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 })
 export class MoreProyectsComponent implements OnInit {
 
-  certifications: number[] = Array.from({ length: 13 }, (_, i) => i + 1);
+  certifications: number[] = Array.from({ length: 14 }, (_, i) => i + 1);
   selectedCert: number | null = null;  // changer de string à number
 
   constructor(

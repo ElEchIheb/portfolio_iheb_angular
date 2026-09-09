@@ -1,193 +1,24 @@
 {
-  "Header.Item1": "À propos de moi",
-  "Header.Item2": "Expérience",
-  "Header.Item3": "Projets",
-  "Header.Item4": "Contact",
-  "Header.cvBtn": "Curriculum",
-  "Header.cvName": "iheb el_ech-cv.pdf",
-  "Loading": "Chargement...",
-
-  "Banner.Pretitle": "Bonjour ! Je m'appelle",
-  "Banner.Description": "J'ai obtenu ma licence en <span class='underline'>sciences informatiques</span>, spécialisé en <span class='underline'>génie logiciel</span> et systèmes d'information. Actuellement, je poursuis un mastère professionnel en <span class='underline'>applications web intelligentes</span>. Rigoureux et capable de synthétiser l'information facilement, je suis également motivé et proactif, toujours prêt à m'engager pleinement dans les projets.",
-  "Banner.ActionBtn": "Dis bonjour",
-
-  "AboutMe.Title": "À propos de moi",
-  "AboutMe.Paragraphs": [
-    "J'ai obtenu une licence en <span class='underline'>sciences informatiques</span>, spécialisé en <span class='underline'>génie logiciel</span> et systèmes d'information. Rigoureux et capable de synthétiser l'information facilement, je suis également motivé et proactif, toujours prêt à m'engager pleinement dans les projets. Je suis actuellement étudiant en mastère professionnel en <span class='underline'>applications web intelligentes</span>.",
-    "Nom : EL ECH IHEB",
-    "Date de naissance : 07 octobre 2002",
-    "Adresse : Morneg, Ben Arous",
-    "Code postal : 2090",
-    "Email : <span class='underline'>ihebelleuch6@gmail.com</span>",
-    "Téléphone : <span class='underline'>+216 95 198 885</span>"
-
+  "Header.Item1":"À propos","Header.Item2":"Parcours","Header.Item3":"Projets","Header.Item4":"Contact","Header.cvBtn":"CV","Header.cvName":"Iheb_El_Ech_CV_FR.pdf","Header.Certifications":"Certifications","Loading":"Chargement...",
+  "Banner.Pretitle":"Bonjour, je m'appelle","Banner.Role":"Développeur full-stack & web intelligent","Banner.Description":"Je conçois des expériences web et mobiles concrètes, des interfaces structurées jusqu'aux services back-end fiables. Titulaire d'une <span class='underline'>licence en génie logiciel et systèmes d'information</span>, je poursuis un mastère professionnel en <span class='underline'>applications web intelligentes</span>.","Banner.ActionBtn":"Échangeons","Banner.ScrollCue":"Faire défiler pour découvrir",
+  "AboutMe.Title":"À propos de moi","AboutMe.Paragraphs":["Je suis Iheb El Ech, développeur passionné par la transformation d'une idée en produit utile et soigné. Mon travail couvre Angular, Ionic, Symfony, Laravel, Node.js et le NLP appliqué.","J'aborde les projets avec rigueur, curiosité et proactivité, de la conception d'une interface au déploiement puis à l'itération."],"AboutMe.Facts":["Basé à Ben Arous, Tunisie","ihebelleuch6@gmail.com","+216 95 198 885","GitHub : ElEchIheb"],
+  "Experience.Title":"Expérience & formation","Experience.Jobs":[
+    {"Type":"Expérience","Tab":"PFE Mastère","Title":"Stage de projet de fin d'études mastère · Développeur web IA","Organization":"CyberCloud Solutions · À distance / Monplaisir, Tunis","Date":"mars 2026 - août 2026","Description":["Développement de JobTest, une plateforme de matching CV-offre basée sur l'IA, dont le moteur combine TF-IDF, embeddings sémantiques et matching de compétences.","Contribution à FastAPI, Streamlit, l'intégration de la base de données, l'explicabilité, l'évaluation et la génération automatisée de rapports PDF."]},
+    {"Type":"Formation","Tab":"Mastère","Title":"Mastère professionnel en applications web intelligentes","Organization":"Institut supérieur d'informatique du Kef","Date":"15 sept. 2024 - 31 oct. 2026","Description":["Programme professionnel consacré aux applications web intelligentes."]},
+    {"Type":"Expérience","Tab":"PFE","Title":"Stage de projet de fin d'études","Organization":"DXC Technology Tunisie · Pôle El Ghazala","Date":"1 fév. 2024 - 30 avr. 2024","Description":["Conception et développement d'une plateforme web et mobile de gestion des utilisateurs DXC selon les rôles et départements.","Mise en œuvre d'une assistance interactive, de flux de bulletins de soins et de notifications e-mail avec Angular, Ionic, Express.js et Gmail SMTP."]},
+    {"Type":"Formation","Tab":"Licence","Title":"Licence en informatique - Génie logiciel et systèmes d'information","Organization":"Institut supérieur d'informatique du Kef","Date":"15 sept. 2021 - 30 juin 2024","Description":["Parcours achevé en génie logiciel et systèmes d'information."]},
+    {"Type":"Expérience","Tab":"PFA","Title":"Stage d'été · Développeur web full-stack","Organization":"Smart Technology · El Manar","Date":"1 août 2023 - 31 août 2023","Description":["Contribution à des applications web concrètes, de la conception au développement, à la maintenance et à la mise en production.","Mise en pratique du développement front-end et back-end avec Symfony."]},
+    {"Type":"Formation","Tab":"Baccalauréat","Title":"Baccalauréat en sciences de l'informatique","Organization":"Lycée Aboulkacem Chebbi, Morneg","Date":"15 sept. 2020 - 30 juin 2021","Description":["Baccalauréat en informatique achevé."]}
   ],
-
-
-    "Experience.Title": "Expérience",
-    "Experience.Jobs": [
-      {
-        "Tab": "PFA",
-        "Title": "Stage de PFA",
-        "Date": "01/08/2023 - 31/08/2023",
-        "Description": [
-          "J'ai effectué un stage d'été chez Smart Technology en tant que développeur web fullstack.",
-          "Au cours de ce stage, j'ai eu l'opportunité de travailler sur des projets concrets, en contribuant au développement et à la maintenance d'applications web.",
-          "J'ai été impliqué dans toutes les phases du processus de développement, de la conception à la mise en production.",
-          "J'ai pu mettre en pratique mes compétences en développement front-end et back-end, en utilisant le Framework ‘Symfony’."
-        ]
-      },
-      {
-        "Tab": "PFE",
-        "Title": "Stage de PFE",
-        "Date": "01/02/2024 - 30/04/2024",
-        "Description": [
-          "Dans le cadre de mon projet de fin d'études chez DXC Technology Tunisie, j'ai conçu et développé une plateforme web et mobile pour la gestion des utilisateurs.",
-          "Ce projet m'a permis de mettre en pratique mes compétences acquises lors de mon stage précédent, en utilisant Angular et Express.js pour le développement web, ainsi que Ionic et Express.js pour la partie mobile.",
-          "J'ai également intégré des fonctionnalités telles qu'un chatbot interactif pour une meilleure expérience utilisateur, ainsi que l'utilisation de Gmail SMTP pour l'envoi d'e-mails vers les utilisateurs."
-        ]
-      },
-      {
-        "Tab": "mastere",
-        "Title": "Master Professionnel en Applications Web Intelligentes",
-        "Date": "2024 - Présent",
-        "Description": [
-          "En cours d'études au Higher Institute of Computer Science of Kef."
-        ]
-      },
-      {
-        "Tab": "licence",
-        "Title": "Licence en Informatique, spécialisation Génie Logiciel et Systèmes d'Information",
-        "Date": "2021 - 2024",
-        "Description": [
-          "Diplôme obtenu au Higher Institute of Computer Science of Kef."
-        ]
-      },
-      {
-        "Tab": "bac",
-        "Title": "Baccalauréat en Informatique",
-        "Date": "2020 - 2021",
-        "Description": [
-          "Obtenu au Lycée Aboulkacem Chebbi, Morneg."
-        ]
-      }
-    ],
-
-  "FeatureProjects.Title": "Mes projets",
-  "FeatureProjects.Label": "Projet phare",
-  "FeatureProjects.Projects": [
-
-    {
-      "Title": "Projet PFE (DXC Mobile APP)",
-      "Description": "Projet de fin d'études au sein de DXC Technology Tunisie. Développement d'une plateforme web et mobile destinée aux utilisateurs de DXC pour la gestion des utilisateurs en fonction des départements, postes et équipes. Fonctionnalités incluant la rédaction de bulletins de soins en ligne et la possibilité de soumettre des demandes à un administrateur. Intégration d'un chatbot interactif pour une assistance personnalisée et une meilleure expérience utilisateur. Utilisation de Gmail SMTP pour l'envoi d'e-mails vers les utilisateurs afin de fournir des notifications et des mises à jour importantes. Conteneurisé en Docker.",
-      "Technologies": ["Angular", "Express.js", "Ionic", "Docker", "Gmail SMTP"],
-      "imgs": [
-        "assets/images/agrourbana/agrourbana1.png",
-        "assets/images/agrourbana/agrourbana2.png",
-        "assets/images/agrourbana/agrourbana3.png",
-        "assets/images/agrourbana/agrourbana4.jpg",
-        "assets/images/agrourbana/agrourbana5.jpg"
-      ]
-    },
-
-    {
-      "Title": "Projet PFA (La gestion du processus de recrutement)",
-      "Description": "J'ai réalisé un projet de fin d'année consistant à développer une application de gestion du processus de recrutement. Mon travail a consisté à concevoir et mettre en œuvre une solution permettant d'automatiser les différentes étapes du recrutement. Grâce à cette expérience, j'ai acquis des compétences en génie logiciel et en utilisation des technologies de l'information pour optimiser les processus de recrutement. Utilisation du framework Symfony. Conception d'une plateforme complète.",
-      "Technologies": ["Symfony"],
-      "imgs": [
-        "assets/images/pfa/1.png",
-        "assets/images/pfa/2.png",
-        "assets/images/pfa/3.png",
-        "assets/images/pfa/4.png",
-        "assets/images/pfa/5.png",
-        "assets/images/pfa/6.png"
-      ]
-    },
-    {
-      "Title": "Portfolio ",
-      "Description": "Portfolio qui contient toutes mes données nécessaires.",
-      "Technologies": [],
-      "imgs": [
-        "assets/images/pf1/1.png",
-        "assets/images/pf1/2.png",
-        "assets/images/pf1/3.png",
-        "assets/images/pf1/4.png"
-      ]
-    }
-
-
-
-
+  "FeatureProjects.Title":"Projets sélectionnés","FeatureProjects.Label":"Étude de cas","FeatureProjects.Details":"Voir les détails","FeatureProjects.Projects":[
+    {"Title":"NeuralHire - Matching CV / offre","Eyebrow":"Plateforme de machine learning","Description":"Un système complet de matching recrutement qui analyse les CV, extrait les compétences et combine TF-IDF, embeddings et matching par compétences. Il expose des scores explicables et des recommandations via une API FastAPI et une interface Next.js.","Technologies":["Python","FastAPI","Next.js","PostgreSQL","scikit-learn","Docker"],"ghLinks":[{"label":"Dépôt","url":"https://github.com/ElEchIheb/Cv_Job_Similarity_ML"}],"accent":"neural"},
+    {"Title":"Plateforme de gestion des utilisateurs DXC","Eyebrow":"Projet de fin d'études","Description":"Une solution web, mobile et API pour gérer les utilisateurs DXC selon leurs départements, rôles et équipes. La plateforme intègre un chatbot, des flux de bulletins de soins et des notifications e-mail ; les applications web, mobile et serveur sont maintenues dans des dépôts dédiés.","Technologies":["Angular","Ionic","Express.js","MySQL","Sequelize","Nodemailer"],"ghLinks":[{"label":"Web","url":"https://github.com/ElEchIheb/pfe_dxc_web"},{"label":"Mobile","url":"https://github.com/ElEchIheb/pfe__mobile"},{"label":"API","url":"https://github.com/ElEchIheb/Dxc_backend"}],"accent":"dxc"},
+    {"Title":"Gestion du processus de recrutement","Eyebrow":"Stage Smart Technology","Description":"Une application full-stack qui accompagne la conception du workflow de recrutement, le traitement des candidatures, le tri et le suivi. Le code Symfony utilise Doctrine ORM, les templates Twig, les formulaires et la validation pour couvrir l'ensemble du parcours.","Technologies":["PHP","Symfony","Doctrine","Twig","Docker"],"ghLinks":[{"label":"Dépôt","url":"https://github.com/ElEchIheb/pfa"}],"accent":"recruit"},
+    {"Title":"JobTest","Eyebrow":"Plateforme de recrutement intelligente","Description":"Une plateforme de matching CV-offre orientée production, avec analyse de documents, extraction NLP, matching sémantique et classement des candidats. Elle réunit une interface recruteur Angular, une API Express, un service ML FastAPI, PostgreSQL et Docker.","Technologies":["Angular","Node.js","FastAPI","PostgreSQL","BERT","Docker"],"ghLinks":[{"label":"Dépôt","url":"https://github.com/ElEchIheb/JobTest"}],"accent":"jobtest"},
+    {"Title":"Personality AI","Eyebrow":"Système NLP","Description":"Une application NLP qui crée un jeu de données synthétique Big Five, entraîne et compare des modèles de machine learning, puis explique leurs prédictions. Le projet sert l'inférence avec FastAPI et inclut la préparation des données et l'évaluation des modèles.","Technologies":["Python","FastAPI","NLTK","scikit-learn","Transformers"],"ghLinks":[{"label":"Dépôt","url":"https://github.com/ElEchIheb/Personality-AI"}],"accent":"personality"},
+    {"Title":"Expérience éco-touristique Jebel Ressas","Eyebrow":"Expérience web bilingue","Description":"Un front-end éco-touristique bilingue pour Jebel Ressas, Tunisie, qui associe récit responsive, photos de paysages et prise en charge RTL. Il est construit comme une expérience React et Vite avec des interactions de défilement mesurées.","Technologies":["React","Vite","GSAP","Three.js"],"ghLinks":[{"label":"Dépôt","url":"https://github.com/ElEchIheb/Jebal-Ressas"}],"accent":"ressas"}
   ],
-  "OtherProjects.Title": "Compétences",
-  "OtherProjects.Projects": [
-    {
-      "Category": "Développement Frontend",
-      "Title": "",
-      "Description": "Framework frontend basé sur TypeScript pour construire des applications web dynamiques.\nAngular\nHTML\nCSS\nJavaScript\nIonic\nFlutter\nSymfony (Twig)",
-      "imgs": [],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": []
-    },
-    {
-      "Category": "Développement Backend",
-      "Title": "",
-      "Description": "Technologies pour le développement côté serveur et la gestion des données.\nPHP\nLaravel\nSymfony\nExpressJS\nNodeJS",
-      "imgs": [],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": []
-    },
-    {
-      "Category": "Bases de données",
-      "Title": "",
-      "Description": "Gestion des bases de données relationnelles et NoSQL.\nPL/SQL\nFirebase",
-      "imgs": [],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": []
-    },
-    {
-      "Category": "Langages de programmation",
-      "Title": "",
-      "Description": "Différents langages utilisés pour le développement logiciel et la science des données.\nC / C++\nJava\nR\nPython\nPython pour la Data Science",
-      "imgs": [],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": []
-    },
-    {
-      "Category": "Intelligence Artificielle & NLP",
-      "Title": "",
-      "Description": "Conception et développement de modèles d'IA et de traitement du langage naturel.\nConception de modèles NLP (Web 4.0)\nDéveloppement de modèles d’analyse de données\nMaîtrise d’algorithmes : Perceptron, K-Fold, etc.",
-      "imgs": [],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": []
-    },
-    {
-      "Category": "Hébergement & DevOps",
-      "Title": "",
-      "Description": "Compétences en déploiement, orchestration et hébergement d’applications.\nHébergement de sites web\nDocker\nKubernetes",
-      "imgs": [],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": []
-    },
-    {
-      "Category": "Outils & Environnements",
-      "Title": "",
-      "Description": "Maîtrise des outils et environnements de développement.\nGIT\nVSCode / IntelliJ / Eclipse\nPS3 / Canva",
-      "imgs": [],
-      "ghLink": "",
-      "demoLink": "",
-      "Technologies": []
-    }
-  ],
-
-  "Contact.Pretitle": "Et maintenant ?",
-  "Contact.Title": "Contactez-moi !",
-  "Contact.Content": "Je serai ravi de recevoir votre message si vous souhaitez discuter de nouvelles opportunités. Écrivez-moi, je répondrai dès que possible.",
-  "Contact.Btn": "Contactez-moi"
+  "OtherProjects.Title":"Compétences","OtherProjects.Intro":"Un ensemble pratique façonné par les études, les stages et les projets réalisés.","OtherProjects.Projects":[{"Category":"Frontend","Description":"Interfaces et expériences mobiles","Technologies":["React","Angular","HTML","CSS","JavaScript","Ionic","Flutter","Symfony Twig"]},{"Category":"Backend","Description":"Services, API et logique applicative","Technologies":["PHP","Laravel","Symfony","Express.js","Node.js","Spring Boot","FastAPI","SQLAlchemy","REST APIs"]},{"Category":"Données & IA","Description":"Données, NLP et bases du machine learning","Technologies":["SQL / PL-SQL","Firebase","PostgreSQL","SQLite","Python","R","NLP","TensorFlow","PyTorch","Keras","TF-IDF","Similarité sémantique","Évaluation de modèles"]},{"Category":"DevOps & outils","Description":"Livraison, collaboration et environnements de développement","Technologies":["Docker","Kubernetes","Jenkins","SonarQube","Nexus","Git","VS Code","IntelliJ","Eclipse","Photoshop","Canva"]}],
+  "Certifications.Title":"Certifications & reconnaissance","Certifications.Intro":"Des jalons de formation et de reconnaissance issus du CV.","Certifications.Items":[{"Name":"CDOSS Deep Learning","Issuer":"Certification officielle de réussite","Skills":["Deep learning"]},{"Name":"Parcours Application Web","Issuer":"GDDC MENA 2021 · programme de 30 jours","Skills":["Développement web"]},{"Name":"Formation certifiée HTML & CSS","Issuer":"Unithink ISI Kef","Skills":["HTML","CSS"]},{"Name":"Certification Flutter","Issuer":"GDG Bizerte & 9antra.tn","Skills":["Flutter"]},{"Name":"Certification de reconnaissance","Issuer":"Université de Jendouba","Skills":["Reconnaissance"]},{"Name":"Déployer une stratégie IA et données pour la transformation numérique des industries","Issuer":"LinkedIn Learning · Élodie Grasset","Skills":["IA","Stratégie data"]},{"Name":"L'essentiel de Symfony 7","Issuer":"LinkedIn Learning · Laurent N'Daw","Skills":["Symfony"]},{"Name":"Les fondamentaux de la gestion du temps","Issuer":"LinkedIn Learning · Ludovic Girodon","Skills":["Gestion du temps"]},{"Name":"Azure AI : intelligence artificielle et machine learning","Issuer":"LinkedIn Learning · Sylvain Labasse","Skills":["Azure AI","Machine learning"]},{"Name":"Devenir développeur Angular","Issuer":"LinkedIn Learning","Skills":["Angular"]},{"Name":"Node.js et Express : construire des API","Issuer":"LinkedIn Learning · Emmanuel Henri","Skills":["Node.js","Express"]},{"Name":"L'essentiel de React.js (2023)","Issuer":"LinkedIn Learning · Sandy Ludosky","Skills":["React"]},{"Name":"L'essentiel de Vue.js","Issuer":"LinkedIn Learning · Maheva Dessart","Skills":["Vue.js"]},{"Name":"ASP.NET : niveau avancé","Issuer":"LinkedIn Learning · Christophe Gigax","Skills":["ASP.NET"]},{"Name":"Préparer la certification Certified ScrumMaster","Issuer":"LinkedIn Learning · Kelley O'Connell","Skills":["Scrum"]}],"Certifications.Award":"2e place · Hackathon ElHack.tn",
+  "Contact.Pretitle":"Et maintenant ?","Contact.Title":"Construisons quelque chose d'utile.","Contact.Content":"Je suis toujours ouvert à une discussion sur un poste, une collaboration ou une idée de produit ambitieuse. Envoyez-moi un message et je vous répondrai.","Contact.Btn":"Me contacter"
 }

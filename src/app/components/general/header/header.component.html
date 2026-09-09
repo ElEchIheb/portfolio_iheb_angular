@@ -23,7 +23,7 @@
           </li>
           <li ngbNavItem (click)='analyticsService.sendAnalyticEvent("click_certifications", "menu", "click")'>
             <a ngbNavLink (click)='scroll("certifications")'>
-              <span class='nav-number'>05. </span> <span class="underline nav-text">Certifs</span>
+              <span class='nav-number'>05. </span> <span class="underline nav-text">{{"Header.Certifications" | translate}}</span>
             </a>
           </li>
 
@@ -102,7 +102,7 @@
                 </li>
                 <li (click)='analyticsService.sendAnalyticEvent("click_certifications", "menu", "click")'>
                     <a (click)='scroll("certifications")'>
-                        <span>05. </span> Certifs
+                        <span>05. </span> {{"Header.Certifications" | translate}}
                     </a>
                 </li>
                 <li (click)='analyticsService.sendAnalyticEvent("click_contact", "menu", "click")'>

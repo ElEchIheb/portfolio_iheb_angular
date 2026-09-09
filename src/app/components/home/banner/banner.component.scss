@@ -42,6 +42,9 @@
             opacity: 1;
         }
     }
+    &::after { background-image: radial-gradient(rgba(100,255,218,.25) 1px, transparent 1px); background-size: 34px 34px; content: ""; inset: 0; mask-image: linear-gradient(to bottom, rgba(0,0,0,.8), transparent 75%); opacity: .18; pointer-events: none; position: absolute; transform: translateY(-8%); z-index: 2; }
+    .hero-code { color: rgba(100,255,218,.16); display: flex; flex-direction: column; font-family: $CodeFont; font-size: clamp(12px,1.6vw,18px); gap: 1.25rem; left: 7%; letter-spacing: .06em; position: absolute; top: 19%; transform: rotate(-10deg); z-index: 2; }.hero-code span:nth-child(2) { margin-left: 4rem; }.hero-code span:nth-child(3) { margin-left: 1.5rem; }
+    .hero-orb { animation: orbit 15s linear infinite; height: 240px; position: absolute; right: 9%; top: 24%; transform-style: preserve-3d; width: 240px; z-index: 2; }.hero-orb::before { background: radial-gradient(circle at 32% 28%, #c6fff3, $Green 26%, rgba(100,255,218,.12) 52%, transparent 70%); border-radius: 50%; box-shadow: 0 0 70px rgba(100,255,218,.35); content: ""; inset: 25px; position: absolute; }.hero-orb i { border: 1px solid rgba(100,255,218,.45); border-radius: 50%; inset: 0; position: absolute; transform: rotateX(67deg) rotateZ(20deg); }.hero-orb i:nth-child(2) { inset: 22px; transform: rotateY(68deg) rotateZ(-35deg); }.hero-orb i:nth-child(3) { inset: 48px; transform: rotateX(28deg) rotateY(55deg); }
 
     .container{
         display: table;
@@ -51,6 +54,7 @@
 
         .section-box-banner{
             display: table-cell;
+            position: relative;
             vertical-align: middle;
 
             .content{
@@ -72,7 +76,7 @@
 
             .banner-name {
                 font-weight: 600;
-                font-size: 80px;
+                font-size: clamp(48px, 7vw, 80px);
                 line-height: 1.1;
                 margin: 0;
                 font-family: $MainFont;
@@ -80,6 +84,7 @@
                 opacity: 0;
                 overflow: hidden;
                 white-space: nowrap;
+                span { display: inline-block; position: relative; text-shadow: 0 0 28px rgba(100,255,218,.23); } span::after { background: radial-gradient(ellipse, rgba(100,255,218,.25), transparent 65%); content: ""; filter: blur(12px); height: 110%; left: -15%; position: absolute; top: -5%; width: 130%; z-index: -1; }
 
                 .cursor {
                     color: rgba(100, 255, 218, 0.8);
@@ -100,7 +105,7 @@
 
             .banner-subtitle {
                 font-weight: 600;
-                font-size: 80px;
+                font-size: clamp(32px, 5vw, 64px);
                 line-height: 1.1;
                 margin: 0;
                 font-family: $MainFont;
@@ -179,6 +184,9 @@
                     }
                 }
             }
+            .scroll-cue { align-items: center; bottom: 34px; color: $Slate; display: flex; font-family: $CodeFont; font-size: 11px; gap: 9px; left: 0; letter-spacing: .06em; position: absolute; text-decoration: none; text-transform: uppercase; }
+            .scroll-cue span { border: 1px solid $Green; border-radius: 9px; display: inline-block; height: 25px; position: relative; width: 15px; }
+            .scroll-cue span::after { animation: scroll-dot 1.8s infinite; background: $Green; border-radius: 50%; content: ""; height: 3px; left: 5px; position: absolute; top: 5px; width: 3px; }
         }
     }
 }
@@ -207,6 +215,8 @@
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+@keyframes scroll-dot { 0%,100% { opacity: .15; transform: translateY(0); } 50% { opacity: 1; transform: translateY(8px); } }
+@keyframes orbit { from { transform: rotate3d(1,1,0,0deg); } to { transform: rotate3d(1,1,0,360deg); } }
 
 // Responsive
 @media (max-width: 768px) {
@@ -225,8 +235,10 @@
                 font-size: 18px;
             }
         }
+        .hero-orb { height: 150px; opacity: .55; right: -35px; top: 18%; width: 150px; }.hero-code { font-size: 11px; left: 4%; opacity: .55; top: 12%; }
     }
 }
+@media (prefers-reduced-motion: reduce) { .banner .hero-orb, .banner .scroll-cue span::after { animation: none; } }
 
 @media (max-width: 480px) {
     .banner {

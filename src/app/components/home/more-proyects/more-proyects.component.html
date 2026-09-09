@@ -1,90 +1,11 @@
-<section id="skills" class="section more-proyects">
-  <div class="container">
-    <div class="section-box">
-      <div>
-        <h3 class="section-title">
-          <span class="n-section-title">04.</span> {{"OtherProjects.Title" | translate}}
-        </h3>
-      </div>
-      <div class="mt-5">
-        <div class="row p-0">
-          <div *ngFor="let project of 'OtherProjects.Projects' | translate; let i = index"
-               class="col-12 col-md-6 col-lg-4 proyect-col"
-               data-aos="fade-up"
-               data-aos-duration="1000">
-            <div class="more-proyect-box">
-              <div class="row w-100 text-left m-0 p-0">
-                <div class="col-12 p-0 mb-2">
-                  <strong class="project-category">{{ project.Category }}</strong>
-                </div>
-                <div class="col-12 p-0 d-flex justify-content-between align-items-center mb-2">
-                  <h5 class="other-proyect-title m-0">{{ project.Title }}</h5>
-                  <div>
-                    <a *ngIf="project.demoLink"
-                       (click)="$event.stopPropagation()"
-                       [href]="project.demoLink" target="_blank"
-                       title="Demo Link">
-                      <i class="fas fa-external-link-alt"></i>
-                    </a>
-                    <a *ngIf="project.ghLink"
-                       (click)="$event.stopPropagation()"
-                       [href]="project.ghLink" target="_blank"
-                       title="GitHub Link" class="ml-3">
-                      <i class="fab fa-github"></i>
-                    </a>
-                  </div>
-                </div>
-                <p class="other-proyect-description">{{ project.Description }}</p>
-              </div>
-              <div>
-                <ul class="more-proyects-skills">
-                  <li *ngFor="let technology of project.Technologies">
-                    <span class="underline">{{ technology }}</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<section id="certifications" class="section certifications-gallery">
-  <div class="container">
-    <div class="section-box">
-      <h3 class="section-title">
-        <span class="n-section-title">05.</span> Certifications
-      </h3>
-      <div class="gallery mt-5 row">
-        <div class="col-6 col-sm-4 col-md-3 mb-4" *ngFor="let cert of certifications">
-          <img
-            [src]="'assets/certifs/' + cert + '.jpg'"
-            alt="Certification {{cert}}"
-            class="img-fluid rounded shadow-sm"
-            style="cursor: pointer;"
-            (click)="openCert(cert)" />
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div
-    class="modal-backdrop"
-    *ngIf="selectedCert !== null"
-    (click)="closeCert()"
-    style="position: fixed; top:0; left:0; width: 100%; height: 100%; background: rgba(0,0,0,0.7); display:flex; justify-content:center; align-items:center;">
-    <div class="modal-content" (click)="$event.stopPropagation()" style="position: relative;">
-      <img
-        [src]="'assets/certifs/' + selectedCert + '.jpg'"
-        alt="Certification agrandie"
-        style="max-width: 90vw; max-height: 90vh; border-radius: 5px; box-shadow: 0 0 20px rgba(0,0,0,0.8);" />
-      <button
-        class="close-btn"
-        (click)="closeCert()"
-        style="position: absolute; top: 10px; right: 10px; font-size: 30px; background: transparent; border: none; color: white; cursor: pointer;">
-        ×
-      </button>
-    </div>
-  </div>
-</section>
+<section id="skills" class="section skills-section"><div class="container"><div class="section-box">
+  <h3 class="section-title"><span class="n-section-title">04.</span> {{ "OtherProjects.Title" | translate }}</h3><p class="section-intro">{{ "OtherProjects.Intro" | translate }}</p>
+  <div class="skills-grid"><article *ngFor="let skill of 'OtherProjects.Projects' | translate; let i = index" class="skill-card" data-animate="fadeInUp" [attr.data-animate-delay]="i * 90" (mousemove)="tilt($event)" (mouseleave)="resetTilt($event)"><span class="skill-index">0{{ i + 1 }}</span><h4>{{ skill.Category }}</h4><p>{{ skill.Description }}</p><ul><li *ngFor="let technology of skill.Technologies">{{ technology }}</li></ul></article></div>
+</div></div></section>
+<section id="certifications" class="section certifications"><div class="container"><div class="section-box">
+  <h3 class="section-title"><span class="n-section-title">05.</span> {{ "Certifications.Title" | translate }}</h3><p class="section-intro">{{ "Certifications.Intro" | translate }}</p>
+  <div class="award"><i class="fas fa-trophy" aria-hidden="true"></i><span>{{ "Certifications.Award" | translate }}</span></div>
+  <div class="certificate-gallery" aria-label="Certificate gallery"><button type="button" class="coverflow-arrow coverflow-prev" (click)="previousCert()" aria-label="Previous certificate"><i class="fas fa-chevron-left"></i></button><button *ngFor="let certImage of certificateImages" type="button" class="certificate-image" [ngClass]="coverPosition(certImage)" (click)="selectCert(certImage)" [attr.aria-label]="'Open certificate ' + certImage"><img [src]="'assets/certifs/' + certImage + '.jpg'" [alt]="'Certificate ' + certImage" loading="lazy"><span><i class="fas fa-expand-alt" aria-hidden="true"></i></span></button><button type="button" class="coverflow-arrow coverflow-next" (click)="nextCert()" aria-label="Next certificate"><i class="fas fa-chevron-right"></i></button></div>
+  <details class="cert-details"><summary>Certificate details</summary><div class="cert-grid"><article *ngFor="let cert of 'Certifications.Items' | translate; let i = index" class="cert-card" (mousemove)="tilt($event)" (mouseleave)="resetTilt($event)"><span class="cert-number">{{ ('0' + (i + 1)).slice(-2) }}</span><h4>{{ cert.Name }}</h4><p>{{ cert.Issuer }}</p><ul><li *ngFor="let skill of cert.Skills">{{ skill }}</li></ul></article></div></details>
+</div></div></section>
+<div *ngIf="previewCert" class="certificate-modal" (click)="closeCert()" role="dialog" aria-modal="true" aria-label="Certificate preview"><button type="button" (click)="closeCert()" aria-label="Close certificate preview">×</button><img (click)="$event.stopPropagation()" [src]="'assets/certifs/' + previewCert + '.jpg'" alt="Certificate preview"></div>

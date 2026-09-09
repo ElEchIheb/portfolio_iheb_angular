@@ -1,4 +1,4 @@
-import { Component, OnInit, AfterViewInit, ElementRef, OnDestroy } from '@angular/core';
+import { Component, OnInit, AfterViewInit, ElementRef, OnDestroy, HostListener } from '@angular/core';
 import { AnalyticsService } from 'src/app/services/analytics/analytics.service';
 import { LoadingService } from 'src/app/services/loading/loading.service';
 import { Subscription } from 'rxjs';
@@ -37,6 +37,16 @@ export class BannerComponent implements OnInit, AfterViewInit, OnDestroy {
   private animationsStarted = false;
   private loadingSubscription?: Subscription;
   private videoElement?: HTMLVideoElement;
+
+  @HostListener('window:scroll')
+  onScroll(): void {
+    if (window.matchMedia('(prefers-reduced-motion: reduce), (max-width: 768px)').matches) { return; }
+    const distance = Math.min(window.scrollY, 700);
+    const code = this.elementRef.nativeElement.querySelector('.hero-code') as HTMLElement;
+    const orb = this.elementRef.nativeElement.querySelector('.hero-orb') as HTMLElement;
+    if (code) { code.style.transform = `rotate(-10deg) translateY(${distance * .16}px)`; }
+    if (orb) { orb.style.marginTop = `${distance * .08}px`; }
+  }
 
   constructor(
     public analyticsService: AnalyticsService,

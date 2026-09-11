@@ -1,15 +1,40 @@
 <section class="section" id="jobs">
   <div class="container jobs"><div class="section-box">
     <h3 class="section-title"><span class="n-section-title">02.</span> {{ "Experience.Title" | translate }}</h3>
-    <ol class="timeline">
-      <li *ngFor="let job of 'Experience.Jobs' | translate; let i = index" class="timeline-item" [class.timeline-item--work]="job.Type === 'Experience'">
-        <div class="timeline-marker" aria-hidden="true"></div>
-        <article class="timeline-card" data-animate="fadeInUp" [attr.data-animate-delay]="i * 100">
-          <div class="timeline-meta"><span>{{ job.Type }}</span><time>{{ job.Date }}</time></div>
-          <h4>{{ job.Title }}</h4><p class="timeline-organization">{{ job.Organization }}</p>
-          <ul><li *ngFor="let detail of job.Description">{{ detail }}</li></ul>
-        </article>
-      </li>
+
+    <div class="journey-tabs" role="tablist">
+      <button type="button" class="journey-tab" role="tab" [class.is-active]="activeTab === 'work'" [attr.aria-selected]="activeTab === 'work'" (click)="setTab('work')">
+        {{ "Experience.TabExperience" | translate }}
+      </button>
+      <button type="button" class="journey-tab" role="tab" [class.is-active]="activeTab === 'edu'" [attr.aria-selected]="activeTab === 'edu'" (click)="setTab('edu')">
+        {{ "Experience.TabEducation" | translate }}
+      </button>
+    </div>
+
+    <ol class="timeline" [hidden]="activeTab !== 'work'" role="tabpanel">
+      <ng-container *ngFor="let job of 'Experience.Jobs' | translate; let i = index">
+        <li *ngIf="job.Kind === 'work'" class="timeline-item timeline-item--work">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <article class="timeline-card" data-animate="fadeInUp" [attr.data-animate-delay]="i * 100">
+            <div class="timeline-meta"><span>{{ job.Type }}</span><time>{{ job.Date }}</time></div>
+            <h4>{{ job.Title }}</h4><p class="timeline-organization">{{ job.Organization }}</p>
+            <ul><li *ngFor="let detail of job.Description">{{ detail }}</li></ul>
+          </article>
+        </li>
+      </ng-container>
+    </ol>
+
+    <ol class="timeline" [hidden]="activeTab !== 'edu'" role="tabpanel">
+      <ng-container *ngFor="let job of 'Experience.Jobs' | translate; let i = index">
+        <li *ngIf="job.Kind === 'edu'" class="timeline-item">
+          <div class="timeline-marker" aria-hidden="true"></div>
+          <article class="timeline-card" data-animate="fadeInUp" [attr.data-animate-delay]="i * 100">
+            <div class="timeline-meta"><span>{{ job.Type }}</span><time>{{ job.Date }}</time></div>
+            <h4>{{ job.Title }}</h4><p class="timeline-organization">{{ job.Organization }}</p>
+            <ul><li *ngFor="let detail of job.Description">{{ detail }}</li></ul>
+          </article>
+        </li>
+      </ng-container>
     </ol>
   </div></div>
 </section>

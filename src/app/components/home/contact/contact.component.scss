@@ -63,16 +63,29 @@
 }
 
 @media (max-width: 768px){
-    
+
     .contact{
         height: 100vh;
         padding: 0 !important;
         margin: 0 auto !important;
         display: table;
+        max-width: 100%;
 
         .container{
             display: table-cell;
             vertical-align: middle;
+        }
+
+        // On mobile the single-line (nowrap) title/subtitle are wider than the
+        // viewport and, combined with display:table, stretch the section past the
+        // screen. Allow them to wrap so the section fits the viewport width.
+        .contact-title{
+            white-space: normal;
+            width: auto;
+            max-width: 100%;
+        }
+        .contact-pre-title{
+            white-space: normal;
         }
     }
 }
